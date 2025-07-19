@@ -1,15 +1,15 @@
 {
     "version":            "1.1",
-    "project_name":       "Luppiter_Controller",
-    "project_version":    "1a675b9-dirty",
+    "project_name":       "LuppiterController",
+    "project_version":    "e5c983f-dirty",
     "project_path":       "/home/arekstasko/sources/repos/LuppiterController",
     "idf_path":           "/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1",
     "build_dir":          "/home/arekstasko/sources/repos/LuppiterController/build",
     "config_file":        "/home/arekstasko/sources/repos/LuppiterController/sdkconfig",
     "config_defaults":    "",
     "bootloader_elf":     "/home/arekstasko/sources/repos/LuppiterController/build/bootloader/bootloader.elf",
-    "app_elf":            "Luppiter_Controller.elf",
-    "app_bin":            "Luppiter_Controller.bin",
+    "app_elf":            "LuppiterController.elf",
+    "app_bin":            "LuppiterController.bin",
     "build_type":         "flash_app",
     "git_revision":       "v5.3.1-dirty",
     "target":             "esp32",
@@ -1180,7 +1180,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/arekstasko/sources/repos/LuppiterController/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/arekstasko/sources/repos/LuppiterController/main/Luppiter_Controller.c" ],
+            "sources": [ "/home/arekstasko/sources/repos/LuppiterController/main/LuppiterController.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {

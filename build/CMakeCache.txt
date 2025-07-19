@@ -213,7 +213,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Luppiter_Controller
+CMAKE_PROJECT_NAME:STATIC=LuppiterController
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=3.6.0
@@ -329,13 +329,13 @@ LINK_WITH_PTHREAD:BOOL=OFF
 LINK_WITH_TRUSTED_STORAGE:BOOL=OFF
 
 //Value Computed by CMake
-Luppiter_Controller_BINARY_DIR:STATIC=/home/arekstasko/sources/repos/LuppiterController/build
+LuppiterController_BINARY_DIR:STATIC=/home/arekstasko/sources/repos/LuppiterController/build
 
 //Value Computed by CMake
-Luppiter_Controller_IS_TOP_LEVEL:STATIC=ON
+LuppiterController_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-Luppiter_Controller_SOURCE_DIR:STATIC=/home/arekstasko/sources/repos/LuppiterController
+LuppiterController_SOURCE_DIR:STATIC=/home/arekstasko/sources/repos/LuppiterController
 
 //Mbed TLS config file (overrides default).
 MBEDTLS_CONFIG_FILE:FILEPATH=

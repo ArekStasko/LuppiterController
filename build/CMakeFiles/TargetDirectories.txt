@@ -12,7 +12,7 @@
 /home/arekstasko/sources/repos/LuppiterController/build/CMakeFiles/flash.dir
 /home/arekstasko/sources/repos/LuppiterController/build/CMakeFiles/encrypted-flash.dir
 /home/arekstasko/sources/repos/LuppiterController/build/CMakeFiles/_project_elf_src.dir
-/home/arekstasko/sources/repos/LuppiterController/build/CMakeFiles/Luppiter_Controller.elf.dir
+/home/arekstasko/sources/repos/LuppiterController/build/CMakeFiles/LuppiterController.elf.dir
 /home/arekstasko/sources/repos/LuppiterController/build/CMakeFiles/size.dir
 /home/arekstasko/sources/repos/LuppiterController/build/CMakeFiles/size-files.dir
 /home/arekstasko/sources/repos/LuppiterController/build/CMakeFiles/size-components.dir
