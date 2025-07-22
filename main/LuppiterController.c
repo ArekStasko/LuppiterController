@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void luppiter_controller(void)
+void app_main(void)
 {
 
 }
