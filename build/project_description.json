@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "LuppiterController",
-    "project_version":    "e2d079c-dirty",
+    "project_version":    "0b0aa2a-dirty",
     "project_path":       "/home/arekstasko/sources/repos/LuppiterController",
     "idf_path":           "/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1",
     "build_dir":          "/home/arekstasko/sources/repos/LuppiterController/build",
@@ -1180,8 +1180,8 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/arekstasko/sources/repos/LuppiterController/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/arekstasko/sources/repos/LuppiterController/main/LuppiterController.c", "/home/arekstasko/sources/repos/LuppiterController/main/services/CommunicationService/Communication_Service.c", "/home/arekstasko/sources/repos/LuppiterController/main/services/NvsService/Nvs_Service.c" ],
-            "include_dirs": [ ".", "./services/CommunicationService", "./services/NvsService" ]
+            "sources": [ "/home/arekstasko/sources/repos/LuppiterController/main/LuppiterController.c", "/home/arekstasko/sources/repos/LuppiterController/main/services/CommunicationService/Communication_Service.c", "/home/arekstasko/sources/repos/LuppiterController/main/services/NvsService/Nvs_Service.c", "/home/arekstasko/sources/repos/LuppiterController/main/services/BarometricPressureService/Barometric_Pressure_Service.c", "/home/arekstasko/sources/repos/LuppiterController/main/services/BarometricPressureService/bmp3.c" ],
+            "include_dirs": [ ".", "./services/CommunicationService", "./services/NvsService", "./services/BarometricPressureService" ]
         },
         "mbedtls": {
             "alias": "idf::mbedtls",
@@ -2791,7 +2791,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ ".", "./services/CommunicationService", "./services/NvsService" ]
+            "include_dirs": [ ".", "./services/CommunicationService", "./services/NvsService", "./services/BarometricPressureService" ]
         }
     },
     "debug_prefix_map_gdbinit": ""

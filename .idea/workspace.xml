@@ -22,22 +22,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="682e66b8-733e-44d7-a276-50019cc365dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/main/services/BarometricPressureService/Barometric_Pressure_Service.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/services/BarometricPressureService/Barometric_Pressure_Service.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/.bin_timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/.bin_timestamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/build/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/build/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/git-data/HEAD" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/git-data/HEAD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/git-data/head-ref" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/git-data/head-ref" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/LuppiterController.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/LuppiterController.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/LuppiterController.elf" beforeDir="false" afterPath="$PROJECT_DIR$/build/LuppiterController.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/LuppiterController.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/LuppiterController.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/bootloader/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/build/bootloader/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/build/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/compile_commands.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_app_format/libesp_app_format.a" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/esp_app_format/libesp_app_format.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/main/CMakeFiles/__idf_main.dir/LuppiterController.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/main/CMakeFiles/__idf_main.dir/LuppiterController.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/main/libmain.a" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/main/libmain.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/project_description.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/project_description.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/main/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/LuppiterController.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/LuppiterController.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/BarometricPressureService/Barometric_Pressure_Service.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/BarometricPressureService/Barometric_Pressure_Service.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,23 +69,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "feature/barometric-pressure-tracking",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/barometric-pressure-tracking&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -97,6 +101,7 @@
       <workItem from="1753294519028" duration="6059000" />
       <workItem from="1753383907078" duration="154000" />
       <workItem from="1753817477379" duration="192000" />
+      <workItem from="1754323727668" duration="2088000" />
     </task>
     <servers />
   </component>
