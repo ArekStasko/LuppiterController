@@ -5,6 +5,7 @@
 #include "bmp3_defs.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include <math.h>
 
 #define I2C_MASTER_SCL_IO           18
 #define I2C_MASTER_SDA_IO           23
@@ -46,6 +47,11 @@ void bmp388_delay_us(uint32_t period, void *intf_ptr)
     vTaskDelay(period / 1000 / portTICK_PERIOD_MS);
 }
 
+float pressure_to_altitude(float pressure_hPa, float sea_level_pressure_hPa)
+{
+    return 44330.0 * (1.0 - pow(pressure_hPa / sea_level_pressure_hPa, 0.1903));
+}
+
 void barometric_pressure_task(void *pvParameters)
 {
     ESP_ERROR_CHECK(i2c_master_init());
@@ -82,8 +88,9 @@ void barometric_pressure_task(void *pvParameters)
 
     while (1) {
         if (bmp3_get_sensor_data(BMP3_PRESS_TEMP, &data, &dev) == BMP3_OK) {
-            printf("🌡Temperatura: %.2f °C | ⬇Ciśnienie: %.2f hPa\n",
-                   data.temperature, data.pressure / 100.0);
+          	float altitude = pressure_to_altitude(data.pressure / 100.0, 1013.25);
+            printf("Temperature: %.2f °C | Pressure: %.2f hPa | Altitude: %.2f m\n",
+                   data.temperature, data.pressure / 100.0, altitude);
         }
         vTaskDelay(pdMS_TO_TICKS(1000)); // odczyt co 1 sek
     }
