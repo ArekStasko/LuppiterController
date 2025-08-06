@@ -5,6 +5,7 @@
 #include <string.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "Barometric_Pressure_Service.h"
 
 static const char *TAG = "LUPPITER-C-CONTROLLER";
 uint8_t broadcast_address[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
@@ -23,9 +24,18 @@ void send_task(void *pvParameter)
 {
     while (1)
     {
-        const char *msg = "Hello World!";
+      	double temperature = get_temperature();
+        double pressure = get_barometric_pressure();
+      	double altitude = get_altitude();
+
+        char buffer[100];
+    	snprintf(buffer, sizeof(buffer), "%.2f | %.2f | %.2f", temperature, pressure, altitude);
+
+        const char *msg = buffer;
         esp_err_t result = esp_now_send(broadcast_address, (uint8_t *)msg, strlen(msg));
         if (result != ESP_OK) {
+          	printf("Temperature: %.2f °C | Pressure: %.2f hPa | Altitude: %.2f m\n",
+                   data.temperature, data.pressure / 100.0, altitude);
             printf("esp_now_send failed: %s\n", esp_err_to_name(result));
         }
         vTaskDelay(pdMS_TO_TICKS(5000));

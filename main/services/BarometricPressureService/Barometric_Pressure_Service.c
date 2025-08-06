@@ -52,7 +52,7 @@ float pressure_to_altitude(float pressure_hPa, float sea_level_pressure_hPa)
     return 44330.0 * (1.0 - pow(pressure_hPa / sea_level_pressure_hPa, 0.1903));
 }
 
-void barometric_pressure_task(void *pvParameters)
+struct bmp3_data barometric_pressure_task(void *pvParameters)
 {
     ESP_ERROR_CHECK(i2c_master_init());
 
@@ -67,7 +67,6 @@ void barometric_pressure_task(void *pvParameters)
 
     if (bmp3_init(&dev) != BMP3_OK) {
         printf("Something went wrong\n");
-        vTaskDelete(NULL);
     }
 
     struct bmp3_settings settings = { 0 };
@@ -86,17 +85,31 @@ void barometric_pressure_task(void *pvParameters)
 
     struct bmp3_data data;
 
-    while (1) {
-        if (bmp3_get_sensor_data(BMP3_PRESS_TEMP, &data, &dev) == BMP3_OK) {
-          	float altitude = pressure_to_altitude(data.pressure / 100.0, 1013.25);
-            printf("Temperature: %.2f °C | Pressure: %.2f hPa | Altitude: %.2f m\n",
-                   data.temperature, data.pressure / 100.0, altitude);
-        }
-        vTaskDelay(pdMS_TO_TICKS(1000)); // odczyt co 1 sek
+    if (bmp3_get_sensor_data(BMP3_PRESS_TEMP, &data, &dev) == BMP3_OK)
+    {
+    	return data;
+    }
+    else
+    {
+    	printf("Something went wrong\n");
     }
 }
 
-void enable_barometric_pressure_service(void)
+double get_temperature(void)
 {
-    xTaskCreate(barometric_pressure_task, "barometric_pressure_task", 4096, NULL, 5, NULL);
+    bmp3_data data = barometric_pressure_task("barometric_pressure_task", 4096, NULL, 5, NULL);
+    return data.temperature;
+}
+
+double get_barometric_pressure(void)
+{
+    bmp3_data data = barometric_pressure_task("barometric_pressure_task", 4096, NULL, 5, NULL);
+    return data.pressure / 100.0;
+}
+
+float get_altitude(void)
+{
+    bmp3_data data = barometric_pressure_task("barometric_pressure_task", 4096, NULL, 5, NULL);
+    float altitude = pressure_to_altitude(data.pressure / 100.0, 1013.25);
+    return altitude;
 }

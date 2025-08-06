@@ -4,5 +4,7 @@
 
 #ifndef BAROMETRIC_PRESSURE_SERVICE_H
 #define BAROMETRIC_PRESSURE_SERVICE_H
-void enable_barometric_pressure_service(void);
+double get_temperature(void);
+double get_barometric_pressure(void);
+float get_altitude(void);
 #endif //BAROMETRIC_PRESSURE_SERVICE_H

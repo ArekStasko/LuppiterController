@@ -22,21 +22,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="682e66b8-733e-44d7-a276-50019cc365dc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/.bin_timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/.bin_timestamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/build/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/build/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/git-data/head-ref" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/git-data/head-ref" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/LuppiterController.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/LuppiterController.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/LuppiterController.elf" beforeDir="false" afterPath="$PROJECT_DIR$/build/LuppiterController.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/bootloader/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/build/bootloader/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/build/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/compile_commands.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_app_format/libesp_app_format.a" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/esp_app_format/libesp_app_format.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/main/CMakeFiles/__idf_main.dir/LuppiterController.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/main/CMakeFiles/__idf_main.dir/LuppiterController.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/project_description.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/project_description.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/LuppiterController.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/LuppiterController.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/BarometricPressureService/Barometric_Pressure_Service.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/BarometricPressureService/Barometric_Pressure_Service.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/BarometricPressureService/Barometric_Pressure_Service.h" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/BarometricPressureService/Barometric_Pressure_Service.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/CommunicationService/Communication_Service.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/CommunicationService/Communication_Service.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +97,8 @@
       <workItem from="1753383907078" duration="154000" />
       <workItem from="1753817477379" duration="192000" />
       <workItem from="1754323727668" duration="2175000" />
-      <workItem from="1754400502832" duration="2964000" />
+      <workItem from="1754400502832" duration="3174000" />
+      <workItem from="1754497115380" duration="2342000" />
     </task>
     <servers />
   </component>

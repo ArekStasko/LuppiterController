@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "LuppiterController",
-    "project_version":    "80955df-dirty",
+    "project_version":    "3cc8185-dirty",
     "project_path":       "/home/arekstasko/sources/repos/LuppiterController",
     "idf_path":           "/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1",
     "build_dir":          "/home/arekstasko/sources/repos/LuppiterController/build",
