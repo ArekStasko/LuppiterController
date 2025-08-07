@@ -13,7 +13,7 @@
 #define I2C_MASTER_FREQ_HZ          100000
 #define BMP388_I2C_ADDR             0x76
 
-esp_err_t i2c_master_init(void)
+esp_err_t init_barometric_pressure_service(void)
 {
     i2c_config_t conf = {
         .mode = I2C_MODE_MASTER,
@@ -52,10 +52,8 @@ float pressure_to_altitude(float pressure_hPa, float sea_level_pressure_hPa)
     return 44330.0 * (1.0 - pow(pressure_hPa / sea_level_pressure_hPa, 0.1903));
 }
 
-struct bmp3_data barometric_pressure_task(void *pvParameters)
+struct bmp3_data get_barometric_pressure_data(void)
 {
-    ESP_ERROR_CHECK(i2c_master_init());
-
     struct bmp3_dev dev;
     uint8_t i2c_addr = BMP388_I2C_ADDR;
 
@@ -84,32 +82,25 @@ struct bmp3_data barometric_pressure_task(void *pvParameters)
     bmp3_set_op_mode(&settings, &dev);
 
     struct bmp3_data data;
-
-    if (bmp3_get_sensor_data(BMP3_PRESS_TEMP, &data, &dev) == BMP3_OK)
-    {
-    	return data;
-    }
-    else
-    {
-    	printf("Something went wrong\n");
-    }
+	bmp3_get_sensor_data(BMP3_PRESS_TEMP, &data, &dev);
+    return data;
 }
 
 double get_temperature(void)
 {
-    bmp3_data data = barometric_pressure_task("barometric_pressure_task", 4096, NULL, 5, NULL);
+    struct bmp3_data data = get_barometric_pressure_data();
     return data.temperature;
 }
 
 double get_barometric_pressure(void)
 {
-    bmp3_data data = barometric_pressure_task("barometric_pressure_task", 4096, NULL, 5, NULL);
+    struct bmp3_data data = get_barometric_pressure_data();
     return data.pressure / 100.0;
 }
 
 float get_altitude(void)
 {
-    bmp3_data data = barometric_pressure_task("barometric_pressure_task", 4096, NULL, 5, NULL);
+    struct bmp3_data data = get_barometric_pressure_data();
     float altitude = pressure_to_altitude(data.pressure / 100.0, 1013.25);
     return altitude;
 }

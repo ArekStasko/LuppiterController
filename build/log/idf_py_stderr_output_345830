@@ -1,0 +1,53 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081a72: panic_abort at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x40089779: esp_system_abort at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400914e1: __assert_func at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x4008a042: xQueueSemaphoreTake at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x4008a15e: xQueueTakeMutexRecursive at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/queue.c:835
+0x40085369: mutex_lock_wrapper at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/esp32/esp_adapter.c:253
+0x400f00dd: esp_now_send at ??:?
+0x400d6c0f: send_task at /home/arekstasko/sources/repos/LuppiterController/main/services/CommunicationService/Communication_Service.c:35 (discriminator 1)
+0x4008a255: vPortTaskWrapper at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081a72: panic_abort at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x40089779: esp_system_abort at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400914e1: __assert_func at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x4008a042: xQueueSemaphoreTake at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x4008a15e: xQueueTakeMutexRecursive at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/queue.c:835
+0x40085369: mutex_lock_wrapper at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/esp32/esp_adapter.c:253
+0x400f00dd: esp_now_send at ??:?
+0x400d6c0f: send_task at /home/arekstasko/sources/repos/LuppiterController/main/services/CommunicationService/Communication_Service.c:35 (discriminator 1)
+0x4008a255: vPortTaskWrapper at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081a72: panic_abort at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x40089779: esp_system_abort at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400914e1: __assert_func at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x4008a042: xQueueSemaphoreTake at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x4008a15e: xQueueTakeMutexRecursive at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/queue.c:835
+0x40085369: mutex_lock_wrapper at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/esp32/esp_adapter.c:253
+0x400f00dd: esp_now_send at ??:?
+0x400d6c0f: send_task at /home/arekstasko/sources/repos/LuppiterController/main/services/CommunicationService/Communication_Service.c:35 (discriminator 1)
+0x4008a255: vPortTaskWrapper at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081a72: panic_abort at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x40089779: esp_system_abort at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400914e1: __assert_func at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x4008a042: xQueueSemaphoreTake at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x4008a15e: xQueueTakeMutexRecursive at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/queue.c:835
+0x40085369: mutex_lock_wrapper at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/esp32/esp_adapter.c:253
+0x400f00dd: esp_now_send at ??:?
+0x400d6c0f: send_task at /home/arekstasko/sources/repos/LuppiterController/main/services/CommunicationService/Communication_Service.c:35 (discriminator 1)
+0x4008a255: vPortTaskWrapper at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

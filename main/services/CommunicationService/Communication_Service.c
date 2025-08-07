@@ -17,7 +17,7 @@ void on_data_recv(const uint8_t *mac, const uint8_t *data, int len)
 
 void on_data_sent(const uint8_t *mac_addr, esp_now_send_status_t status)
 {
-    printf("Data sent\n");
+    printf("\nData sent\n");
 }
 
 void send_task(void *pvParameter)
@@ -34,10 +34,9 @@ void send_task(void *pvParameter)
         const char *msg = buffer;
         esp_err_t result = esp_now_send(broadcast_address, (uint8_t *)msg, strlen(msg));
         if (result != ESP_OK) {
-          	printf("Temperature: %.2f °C | Pressure: %.2f hPa | Altitude: %.2f m\n",
-                   data.temperature, data.pressure / 100.0, altitude);
             printf("esp_now_send failed: %s\n", esp_err_to_name(result));
         }
+        printf(msg);
         vTaskDelay(pdMS_TO_TICKS(5000));
     }
 }
