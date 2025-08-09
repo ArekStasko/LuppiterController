@@ -13,19 +13,8 @@
 #define I2C_MASTER_FREQ_HZ          100000
 #define BMP388_I2C_ADDR             0x76
 
-esp_err_t init_barometric_pressure_service(void)
-{
-    i2c_config_t conf = {
-        .mode = I2C_MODE_MASTER,
-        .sda_io_num = I2C_MASTER_SDA_IO,
-        .sda_pullup_en = GPIO_PULLUP_ENABLE,
-        .scl_io_num = I2C_MASTER_SCL_IO,
-        .scl_pullup_en = GPIO_PULLUP_ENABLE,
-        .master.clk_speed = I2C_MASTER_FREQ_HZ,
-    };
-    ESP_ERROR_CHECK(i2c_param_config(I2C_MASTER_NUM, &conf));
-    return i2c_driver_install(I2C_MASTER_NUM, conf.mode, 0, 0, 0);
-}
+static struct bmp3_dev dev;
+static uint8_t i2c_addr = BMP388_I2C_ADDR;
 
 int8_t bmp388_i2c_read(uint8_t reg_addr, uint8_t *reg_data, uint32_t len, void *intf_ptr)
 {
@@ -47,16 +36,8 @@ void bmp388_delay_us(uint32_t period, void *intf_ptr)
     vTaskDelay(period / 1000 / portTICK_PERIOD_MS);
 }
 
-float pressure_to_altitude(float pressure_hPa, float sea_level_pressure_hPa)
+void enable_barometric_pressure_service(void)
 {
-    return 44330.0 * (1.0 - pow(pressure_hPa / sea_level_pressure_hPa, 0.1903));
-}
-
-struct bmp3_data get_barometric_pressure_data(void)
-{
-    struct bmp3_dev dev;
-    uint8_t i2c_addr = BMP388_I2C_ADDR;
-
     dev.intf = BMP3_I2C_INTF;
     dev.read = bmp388_i2c_read;
     dev.write = bmp388_i2c_write;
@@ -73,14 +54,39 @@ struct bmp3_data get_barometric_pressure_data(void)
     settings.odr_filter.press_os = BMP3_OVERSAMPLING_4X;
     settings.odr_filter.temp_os = BMP3_OVERSAMPLING_2X;
     settings.odr_filter.iir_filter = BMP3_IIR_FILTER_COEFF_3;
+ 	settings.op_mode = BMP3_MODE_NORMAL;
 
     uint32_t settings_sel = BMP3_SEL_PRESS_EN | BMP3_SEL_TEMP_EN |
-                        BMP3_SEL_PRESS_OS | BMP3_SEL_TEMP_OS |
-                        BMP3_SEL_ODR;
+                            BMP3_SEL_PRESS_OS | BMP3_SEL_TEMP_OS |
+                            BMP3_SEL_IIR_FILTER | BMP3_SEL_FIFO_MODE;
 
     bmp3_set_sensor_settings(settings_sel, &settings, &dev);
     bmp3_set_op_mode(&settings, &dev);
+}
 
+
+void init_barometric_pressure_service(void)
+{
+    i2c_config_t conf = {
+        .mode = I2C_MODE_MASTER,
+        .sda_io_num = I2C_MASTER_SDA_IO,
+        .sda_pullup_en = GPIO_PULLUP_ENABLE,
+        .scl_io_num = I2C_MASTER_SCL_IO,
+        .scl_pullup_en = GPIO_PULLUP_ENABLE,
+        .master.clk_speed = I2C_MASTER_FREQ_HZ,
+    };
+    ESP_ERROR_CHECK(i2c_param_config(I2C_MASTER_NUM, &conf));
+    i2c_driver_install(I2C_MASTER_NUM, conf.mode, 0, 0, 0);
+    enable_barometric_pressure_service();
+}
+
+float pressure_to_altitude(float pressure_hPa, float sea_level_pressure_hPa)
+{
+    return 44330.0 * (1.0 - pow(pressure_hPa / sea_level_pressure_hPa, 0.1903));
+}
+
+struct bmp3_data get_barometric_pressure_data(void)
+{
     struct bmp3_data data;
 	bmp3_get_sensor_data(BMP3_PRESS_TEMP, &data, &dev);
     return data;

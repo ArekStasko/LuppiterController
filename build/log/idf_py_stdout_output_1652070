@@ -1,0 +1,69 @@
+[1/5] cd /home/arekstasko/sources/repos/LuppiterController/build/esp-idf/esptool_py && /home/arekstasko/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/arekstasko/sources/repos/LuppiterController/build/partition_table/partition-table.bin /home/arekstasko/sources/repos/LuppiterController/build/LuppiterController.bin
+LuppiterController.bin binary size 0xc0fe0 bytes. Smallest app partition is 0x100000 bytes. 0x3f020 bytes (25%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/arekstasko/sources/repos/LuppiterController/build/bootloader/esp-idf/esptool_py && /home/arekstasko/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/arekstasko/sources/repos/LuppiterController/build/bootloader/bootloader.bin
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/3] cd /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esptool_py && /home/arekstasko/.espressif/tools/cmake/3.24.0/bin/cmake -D IDF_PATH=/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1 -D "SERIAL_TOOL=/home/arekstasko/.espressif/python_env/idf5.3_py3.10_env/bin/python;;/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/arekstasko/sources/repos/LuppiterController/build -P /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 LuppiterController.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/ttyUSB0
+Connecting...........
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 84:1f:e8:09:93:dc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000d0fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26752 bytes to 16360...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16360 compressed) at 0x00001000 in 0.5 seconds (effective 410.2 kbit/s)...
+Hash of data verified.
+Compressed 790496 bytes to 500552...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001cf9b... (6 %)
+Writing at 0x00023cc0... (9 %)
+Writing at 0x00028c9a... (12 %)
+Writing at 0x000343e5... (16 %)
+Writing at 0x0003a439... (19 %)
+Writing at 0x0003fda7... (22 %)
+Writing at 0x0004553c... (25 %)
+Writing at 0x0004b85c... (29 %)
+Writing at 0x00051649... (32 %)
+Writing at 0x000574b4... (35 %)
+Writing at 0x0005cf4f... (38 %)
+Writing at 0x00063359... (41 %)
+Writing at 0x0006848f... (45 %)
+Writing at 0x0006da69... (48 %)
+Writing at 0x00072ccb... (51 %)
+Writing at 0x00078381... (54 %)
+Writing at 0x0007da1e... (58 %)
+Writing at 0x000833b4... (61 %)
+Writing at 0x00088f96... (64 %)
+Writing at 0x0008e97a... (67 %)
+Writing at 0x000944bc... (70 %)
+Writing at 0x0009a029... (74 %)
+Writing at 0x0009fac9... (77 %)
+Writing at 0x000a586a... (80 %)
+Writing at 0x000ab30f... (83 %)
+Writing at 0x000b1673... (87 %)
+Writing at 0x000bc86b... (90 %)
+Writing at 0x000c250e... (93 %)
+Writing at 0x000c8a6d... (96 %)
+Writing at 0x000cddff... (100 %)
+Wrote 790496 bytes (500552 compressed) at 0x00010000 in 12.0 seconds (effective 529.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1615.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
