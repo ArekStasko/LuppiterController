@@ -22,39 +22,470 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="682e66b8-733e-44d7-a276-50019cc365dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/main/services/NvsService/Nvs_Service.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/services/NvsService/Nvs_Service.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/.bin_timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/.bin_timestamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.bin_timestamp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/build/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/build/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/LuppiterController.elf.dir/project_elf_src_esp32.c.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/git-data/head-ref" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/git-data/head-ref" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/LuppiterController.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/LuppiterController.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/LuppiterController.elf" beforeDir="false" afterPath="$PROJECT_DIR$/build/LuppiterController.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/LuppiterController.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/LuppiterController.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/LuppiterController.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/LuppiterController.elf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/LuppiterController.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/bootloader/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/build/bootloader/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/build/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/compile_commands.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/config/sdkconfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/config/sdkconfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/config/sdkconfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/build/config/sdkconfig.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/config/sdkconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/config/sdkconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace_util.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/host_file_io.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/app_trace/libapp_trace.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/app_update/libapp_update.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/bootloader_support/libbootloader_support.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/cmock/CMakeFiles/__idf_cmock.dir/CMock/src/cmock.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/cmock/libcmock.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_cmd.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_date.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_dbl.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_dstr.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_end.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_file.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_hashtable.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_int.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_lit.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_rem.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_rex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_str.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_utils.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/argtable3.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/commands.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/esp_console_common.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/esp_console_repl_chip.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/linenoise/linenoise.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/CMakeFiles/__idf_console.dir/split_argv.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/console/libconsole.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/cxx/libcxx.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/driver/libdriver.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/efuse/libefuse.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp-tls-crypto/esp_tls_crypto.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp_tls.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp_tls_error_capture.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp_tls_mbedtls.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp_tls_platform_port.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp-tls/libesp-tls.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_common.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp32/esp_adc_cal_legacy.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/esp32/adc_cali_line_fitting.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/esp32/adc_dma.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_adc/libesp_adc.a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_app_format/libesp_app_format.a" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/esp_app_format/libesp_app_format.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_app_format/libesp_app_format.a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/esp_bootloader_desc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/esp_bootloader_desc.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_bootloader_format/libesp_bootloader_format.a" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/esp_bootloader_format/libesp_bootloader_format.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/esp-idf/main/CMakeFiles/__idf_main.dir/LuppiterController.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/main/CMakeFiles/__idf_main.dir/LuppiterController.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/esp-idf/main/CMakeFiles/__idf_main.dir/services/CommunicationService/Communication_Service.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/main/CMakeFiles/__idf_main.dir/services/CommunicationService/Communication_Service.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/esp-idf/main/libmain.a" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/main/libmain.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_page.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_page.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_pagemanager.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_pagemanager.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_partition_manager.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_partition_manager.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_storage.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_storage.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/esp-idf/nvs_flash/libnvs_flash.a" beforeDir="false" afterPath="$PROJECT_DIR$/build/esp-idf/nvs_flash/libnvs_flash.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_bootloader_format/libesp_bootloader_format.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_coex/CMakeFiles/__idf_esp_coex.dir/esp32/esp_coex_adapter.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_coex/libesp_coex.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_common/libesp_common.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/dvp_share_ctrl.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/esp_cam_ctlr.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_cam/libesp_driver_cam.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_dac/libesp_driver_dac.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src/gpio.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src/gpio_glitch_filter_ops.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src/rtc_io.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_gpio/libesp_driver_gpio.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_gptimer/libesp_driver_gptimer.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_i2c/libesp_driver_i2c.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_i2s/libesp_driver_i2s.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_ledc/libesp_driver_ledc.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_sdio/libesp_driver_sdio.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_sdm/libesp_driver_sdm.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_sdmmc/libesp_driver_sdmmc.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_sdspi/libesp_driver_sdspi.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_spi/libesp_driver_spi.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_driver_uart/libesp_driver_uart.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_netif_glue.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_dma.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_gpio.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_802_3.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_dp83848.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_ip101.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_ksz80xx.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_lan87xx.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_rtl8201.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_eth/libesp_eth.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_event/libesp_event.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/gdbstub.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/gdbstub_transport.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/packet.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/port/xtensa/gdbstub-entry.S.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/port/xtensa/gdbstub_xtensa.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/port/xtensa/xt_debugexception.S.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_gdbstub/libesp_gdbstub.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hid_common.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidd.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidh.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_hid/libesp_hid.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/esp_http_client.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_auth.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_header.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_utils.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_http_client/libesp_http_client.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_main.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_parse.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_sess.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_txrx.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_uri.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_ws.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/util/ctrl_sock.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_http_server/libesp_http_server.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_https_ota/CMakeFiles/__idf_esp_https_ota.dir/src/esp_https_ota.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_https_ota/libesp_https_ota.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_https_server/CMakeFiles/__idf_esp_https_server.dir/src/https_server.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_https_server/libesp_https_server.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_hw_support/libesp_hw_support.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/i2c/esp_lcd_panel_io_i2c_v1.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/i2c/esp_lcd_panel_io_i2c_v2.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/i80/esp_lcd_panel_io_i2s.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/spi/esp_lcd_panel_io_spi.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_common.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_io.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_nt35510.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_ops.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_ssd1306.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_st7789.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_lcd/libesp_lcd.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/proto-c/esp_local_ctrl.pb-c.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl_handler.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl_transport_httpd.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_local_ctrl/libesp_local_ctrl.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_mm/libesp_mm.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/esp_netif_defaults.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/esp_netif_handlers.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/esp_netif_objects.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip/esp_netif_lwip.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip/esp_netif_lwip_defaults.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip/esp_netif_sntp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip/netif/esp_pbuf_ref.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip/netif/ethernetif.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip/netif/wlanif.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_netif/libesp_netif.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_partition/libesp_partition.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_phy/libesp_phy.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_impl.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_locks.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_trace.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_pm/libesp_pm.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_ringbuf/libesp_ringbuf.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_rom/libesp_rom.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_system/ld/sections.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_system/libesp_system.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_timer/libesp_timer.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_vfs_console/libesp_vfs_console.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/esp32/esp_adapter.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/lib_printf.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/mesh_event.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig_ack.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_default.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_default_ap.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_init.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_netif.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/esp_wifi/libesp_wifi.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_binary.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_common.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_crc.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_elf.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_flash.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_init.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_sha.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_uart.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/port/xtensa/core_dump_port.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/espcoredump/libespcoredump.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ff.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/fatfs/libfatfs.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/freertos/libfreertos.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/hal/libhal.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/heap/libheap.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/http_parser.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/http_parser/libhttp_parser.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/json/CMakeFiles/__idf_json.dir/cJSON/cJSON.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/json/CMakeFiles/__idf_json.dir/cJSON/cJSON_Utils.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/json/libjson.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/log/liblog.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/apps/dhcpserver/dhcpserver.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/apps/ping/esp_ping.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/apps/ping/ping.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/apps/ping/ping_sock.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/sockets.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/dns.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/autoip.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/dhcp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/etharp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/icmp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/igmp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/ip4.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/ip4_addr.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/ip4_frag.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/ip4_napt.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/dhcp6.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/ethip6.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/icmp6.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/inet6.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/ip6.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/ip6_addr.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/ip6_frag.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/mld6.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/nd6.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/memp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/netif.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/pbuf.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/raw.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/tcp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/tcp_in.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/tcp_out.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/timeouts.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/udp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/bridgeif.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/bridgeif_fdb.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ethernet.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/auth.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/ccp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/chap-md5.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/chap-new.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/chap_ms.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/demand.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/eap.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/ecp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/eui64.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/fsm.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/ipcp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/ipv6cp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/lcp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/magic.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/mppe.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/multilink.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/ppp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/pppapi.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/pppcrypt.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/pppoe.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/pppol2tp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/pppos.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/upap.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/utils.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/vj.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/slipif.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/debug/lwip_debug.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/esp32xx/vfs_lwip.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/freertos/sys_arch.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/hooks/lwip_default_hooks.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/hooks/tcp_isn_default.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/sockets_ext.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/lwip/liblwip.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/main/CMakeFiles/__idf_main.dir/LuppiterController.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/main/CMakeFiles/__idf_main.dir/services/BarometricPressureService/Barometric_Pressure_Service.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/main/CMakeFiles/__idf_main.dir/services/BarometricPressureService/bmp3.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/main/CMakeFiles/__idf_main.dir/services/CommunicationService/Communication_Service.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/main/CMakeFiles/__idf_main.dir/services/NvsService/Nvs_Service.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/main/libmain.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/__/__/x509_crt_bundle.S.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/mbedtls/libmbedtls.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/libeverest.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/libp256m.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/mbedtls/mbedtls/library/libmbedcrypto.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/mbedtls/mbedtls/library/libmbedtls.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/mbedtls/mbedtls/library/libmbedx509.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/mbedtls/x509_crt_bundle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_msg.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_outbox.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/platform_esp32_idf.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt_client.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/mqtt/libmqtt.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/newlib/libnewlib.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/nvs_flash/libnvs_flash.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/nvs_sec_provider/libnvs_sec_provider.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/xtensa_perfmon_access.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/xtensa_perfmon_apis.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/xtensa_perfmon_masks.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/perfmon/libperfmon.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/protobuf-c/protobuf-c/protobuf-c.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/protobuf-c/libprotobuf-c.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/constants.pb-c.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/sec0.pb-c.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/sec1.pb-c.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/sec2.pb-c.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/session.pb-c.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/common/protocomm.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/crypto/srp6a/esp_srp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/crypto/srp6a/esp_srp_mpi.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/security/security0.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/security/security1.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/security/security2.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/transports/protocomm_console.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/transports/protocomm_httpd.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/protocomm/libprotocomm.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/pthread/libpthread.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/sdmmc/libsdmmc.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/soc/libsoc.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/spi_flash/libspi_flash.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/esp_spiffs.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_cache.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_check.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_gc.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_hydrogen.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_nucleus.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs_api.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/spiffs/libspiffs.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_internal.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_socks_proxy.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_ssl.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_ws.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/tcp_transport/libtcp_transport.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/unity/CMakeFiles/__idf_unity.dir/port/esp/unity_utils_memory_esp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/unity/CMakeFiles/__idf_unity.dir/unity/src/unity.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_compat.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_port_esp32.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_runner.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_utils_cache.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_utils_freertos.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_utils_memory.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/unity/libunity.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/vfs/libvfs.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/Partition.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/SPI_Flash.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Ext_Perf.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Ext_Safe.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Flash.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/crc32.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/wear_levelling.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wear_levelling/libwear_levelling.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_config.pb-c.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_constants.pb-c.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_ctrl.pb-c.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_scan.pb-c.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/handlers.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/manager.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/scheme_console.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/scheme_softap.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/wifi_config.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/wifi_ctrl.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/wifi_scan.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wifi_provisioning/libwifi_provisioning.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/crypto/crypto_mbedtls-bignum.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/crypto/crypto_mbedtls-ec.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/crypto/crypto_mbedtls-rsa.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/crypto/crypto_mbedtls.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/crypto/fastpbkdf2.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/crypto/tls_mbedtls.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_common.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_eap_client.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_hostap.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_owe.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_wpa2_api_port.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_wpa3.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_wpa_main.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_wpas_glue.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_wps.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/port/eloop.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/port/os_xtensa.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ap_config.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/comeback_token.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ieee802_11.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ieee802_1x.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/pmksa_cache_auth.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/sta_info.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/wpa_auth.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/wpa_auth_ie.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/dragonfly.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/ieee802_11_common.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/sae.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/sae_pk.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/wpa_common.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-ccm.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-gcm.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-siv.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-unwrap.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-wrap.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/ccmp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_ops.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/des-internal.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/dh_group5.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/dh_groups.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md4-internal.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/ms_funcs.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/rc4.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-prf.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-tlsprf.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-tprf.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256-kdf.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256-prf.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256-tlsprf.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha384-prf.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha384-tlsprf.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_common/eap_wsc_common.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/chap.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_common.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_fast.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_fast_common.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_fast_pac.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_mschapv2.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap_common.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_tls.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_tls_common.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_ttls.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/mschapv2.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/pmksa_cache.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/wpa.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/wpa_ie.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/base64.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/bitfield.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/common.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/ext_password.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/json.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/uuid.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpa_debug.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpabuf.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_build.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_parse.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_process.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_common.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_dev_attr.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_enrollee.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/wpa_supplicant/libwpa_supplicant.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xt_trax.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_context.S.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_intr.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_intr_asm.S.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_vectors.S.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/esp-idf/xtensa/libxtensa.a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/project_description.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/project_description.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/main/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/LuppiterController.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/LuppiterController.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/CommunicationService/Communication_Service.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/CommunicationService/Communication_Service.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdkconfig" beforeDir="false" afterPath="$PROJECT_DIR$/sdkconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/x509_crt_bundle.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/BarometricPressureService/Barometric_Pressure_Service.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/BarometricPressureService/Barometric_Pressure_Service.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +521,7 @@
     &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/network-connect&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/barometric-pressure-tracking&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -111,7 +542,15 @@
       <workItem from="1753006213495" duration="706000" />
       <workItem from="1753116311545" duration="727000" />
       <workItem from="1753202772939" duration="2657000" />
-      <workItem from="1753294519028" duration="5290000" />
+      <workItem from="1753294519028" duration="6059000" />
+      <workItem from="1753383907078" duration="154000" />
+      <workItem from="1753817477379" duration="192000" />
+      <workItem from="1754323727668" duration="2175000" />
+      <workItem from="1754400502832" duration="3174000" />
+      <workItem from="1754497115380" duration="3090000" />
+      <workItem from="1754582899158" duration="3497000" />
+      <workItem from="1754658133383" duration="2000" />
+      <workItem from="1754734741019" duration="3418000" />
     </task>
     <servers />
   </component>
@@ -122,5 +561,15 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main/services/BarometricPressureService/Barometric_Pressure_Service.c</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
