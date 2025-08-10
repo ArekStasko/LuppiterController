@@ -1,15 +1,15 @@
 {
     "version":            "1.1",
-    "project_name":       "Luppiter_Controller",
-    "project_version":    "1a675b9-dirty",
+    "project_name":       "LuppiterController",
+    "project_version":    "f7cd47c-dirty",
     "project_path":       "/home/arekstasko/sources/repos/LuppiterController",
     "idf_path":           "/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1",
     "build_dir":          "/home/arekstasko/sources/repos/LuppiterController/build",
     "config_file":        "/home/arekstasko/sources/repos/LuppiterController/sdkconfig",
     "config_defaults":    "",
     "bootloader_elf":     "/home/arekstasko/sources/repos/LuppiterController/build/bootloader/bootloader.elf",
-    "app_elf":            "Luppiter_Controller.elf",
-    "app_bin":            "Luppiter_Controller.bin",
+    "app_elf":            "LuppiterController.elf",
+    "app_bin":            "LuppiterController.bin",
     "build_type":         "flash_app",
     "git_revision":       "v5.3.1-dirty",
     "target":             "esp32",
@@ -1175,13 +1175,13 @@
             "dir": "/home/arekstasko/sources/repos/LuppiterController/main",
             "type": "LIBRARY",
             "lib": "__idf_main",
-            "reqs": [],
+            "reqs": [ "nvs_flash", "driver", "esp_wifi" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/arekstasko/sources/repos/LuppiterController/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/arekstasko/sources/repos/LuppiterController/main/Luppiter_Controller.c" ],
-            "include_dirs": [ "." ]
+            "sources": [ "/home/arekstasko/sources/repos/LuppiterController/main/LuppiterController.c", "/home/arekstasko/sources/repos/LuppiterController/main/services/CommunicationService/Communication_Service.c", "/home/arekstasko/sources/repos/LuppiterController/main/services/NvsService/Nvs_Service.c", "/home/arekstasko/sources/repos/LuppiterController/main/services/BarometricPressureService/Barometric_Pressure_Service.c", "/home/arekstasko/sources/repos/LuppiterController/main/services/BarometricPressureService/bmp3.c" ],
+            "include_dirs": [ ".", "./services/CommunicationService", "./services/NvsService", "./services/BarometricPressureService" ]
         },
         "mbedtls": {
             "alias": "idf::mbedtls",
@@ -2787,11 +2787,11 @@
             "prefix": "idf",
             "dir": "/home/arekstasko/sources/repos/LuppiterController/main",
             "lib": "__idf_main",
-            "reqs": [],
+            "reqs": [ "nvs_flash", "driver", "esp_wifi" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "." ]
+            "include_dirs": [ ".", "./services/CommunicationService", "./services/NvsService", "./services/BarometricPressureService" ]
         }
     },
     "debug_prefix_map_gdbinit": ""

@@ -1,2 +1,3 @@
-idf_component_register(SRCS "Luppiter_Controller.c"
-        INCLUDE_DIRS ".")
+idf_component_register(SRCS "LuppiterController.c" "./services/CommunicationService/Communication_Service.c" "./services/NvsService/Nvs_Service.c" "./services/BarometricPressureService/Barometric_Pressure_Service.c" "./services/BarometricPressureService/bmp3.c"
+                    INCLUDE_DIRS "." "./services/CommunicationService" "./services/NvsService" "./services/BarometricPressureService"
+                    REQUIRES nvs_flash driver esp_wifi)

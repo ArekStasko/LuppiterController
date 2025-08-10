@@ -1,0 +1,28 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/arekstasko/sources/repos/LuppiterController/build/bootloader/esp-idf/esptool_py && /home/arekstasko/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/arekstasko/sources/repos/LuppiterController/build/bootloader/bootloader.bin
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/services/BarometricPressureService/Barometric_Pressure_Service.c.obj
+/home/arekstasko/sources/repos/LuppiterController/main/services/BarometricPressureService/Barometric_Pressure_Service.c: In function 'get_barometric_pressure_data':
+/home/arekstasko/sources/repos/LuppiterController/main/services/BarometricPressureService/bmp3_defs.h:178:57: warning: passing argument 1 of 'bmp3_set_op_mode' makes pointer from integer without a cast [-Wint-conversion]
+  178 | #define BMP3_MODE_NORMAL                        UINT8_C(0x03)
+      |                                                         ^~~~
+      |                                                         |
+      |                                                         int
+/home/arekstasko/sources/repos/LuppiterController/main/services/BarometricPressureService/Barometric_Pressure_Service.c:82:22: note: in expansion of macro 'BMP3_MODE_NORMAL'
+   82 |     bmp3_set_op_mode(BMP3_MODE_NORMAL, &dev);
+      |                      ^~~~~~~~~~~~~~~~
+In file included from /home/arekstasko/sources/repos/LuppiterController/main/services/BarometricPressureService/Barometric_Pressure_Service.c:4:
+/home/arekstasko/sources/repos/LuppiterController/main/services/BarometricPressureService/bmp3.h:208:47: note: expected 'struct bmp3_settings *' but argument is of type 'int'
+  208 | int8_t bmp3_set_op_mode(struct bmp3_settings *settings, struct bmp3_dev *dev);
+      |                         ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable LuppiterController.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/arekstasko/sources/repos/LuppiterController/build/LuppiterController.bin
+[7/7] cd /home/arekstasko/sources/repos/LuppiterController/build/esp-idf/esptool_py && /home/arekstasko/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/arekstasko/sources/repos/LuppiterController/build/partition_table/partition-table.bin /home/arekstasko/sources/repos/LuppiterController/build/LuppiterController.bin
+LuppiterController.bin binary size 0xc0fe0 bytes. Smallest app partition is 0x100000 bytes. 0x3f020 bytes (25%) free.
